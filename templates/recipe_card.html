@@ -1,6 +1,11 @@
 <a href="r/{{ FILENAME }}">
-  <div class="recipe_card">
-    <h1>{{ CARD_TITLE }}</h1>
-    <p>{{ CARD_DESCRIPTION }}</p>
+  <div
+    style="background-image: url('{{ IMAGE }}'); background-position: center;"
+    class="recipe_card"
+  >
+    <div class="recipe_card_text">
+      <h1>{{ CARD_TITLE }}</h1>
+      <p>{{ CARD_DESCRIPTION }}</p>
+    </div>
   </div>
 </a>

@@ -39,16 +39,25 @@ body {
 }
 
 .recipe_card {
-  background-color: #ffffff;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 8px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 1);
   /* overflow: hidden; */
   transition: transform 0.2s ease;
   padding: 20px;
+}
+
+.recipe_card_text {
   text: black;
   text-decoration: none;
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px;
+  text: black;
+  text-decoration: none;
+  font-size: 18px;
+  opacity: 0.8;
 }
 
 .recipe_card:hover {

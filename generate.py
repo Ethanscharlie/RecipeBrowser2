@@ -50,6 +50,7 @@ def generate_recipe_card(recipe_yml: dict) -> str:
     html = load_template("recipe_card")
     html = html.replace("{{ FILENAME }}", f"{recipe_yml["filename"]}.html")
     html = html.replace("{{ CARD_TITLE }}", recipe_yml["Title"])
+    html = html.replace("{{ IMAGE }}", f"/images/{recipe_yml["Image"]}")
     html = html.replace("{{ CARD_DESCRIPTION }}", recipe_yml["Description"])
     return html
 
