@@ -3,18 +3,22 @@ Description: Simple crab sushi rolls
 Image: sushi.png
 
 Ingredients:
-  - Crab Stick, 1 Stick
-  - Sushi Rice, 1 Cup
+  - ^Base Ingredients, $1.17
+  - Sushi Rice, 1 Cup, $0.99
   - Water, 1 cup
-  - Nori (Seaweed Sheet), 1/2 sheet
-  - Vinegar, 1/8 cup
-  - Salt, A pitch
-  - Suger, A pintch
+  - Nori (Seaweed Sheet), 1/2 sheet, $0.13
+  - Vinegar, 1/8 cup, $0.03
+  - Salt, A pitch, $0.01
+  - Suger, A pintch, $0.01
+  - ^Toppings (Optional)
+  - Crab Stick, 1 Stick, $0.21
 
 Instructions:
+  - ^Rice
   - Wash rice 3 times
   - Put rice in rice cooker with 1 cup of water for 2 cycles
   - Mix Vinegar, salt, and sugar in bowl
+  - ^Rolling
   - Take half of Seaweed sheet, and place rice mostly on the top section
   - Put crab on top section
   - Roll Sushi tightly

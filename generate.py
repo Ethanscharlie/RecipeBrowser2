@@ -29,6 +29,7 @@ def generate_recipe_html(name: str) -> str:
     html = load_template("recipe")
     html = html.replace("{{ RECIPE_TITLE }}", recipe_yml["Title"])
     html = html.replace("{{ RECIPE_DESCRIPTION }}", recipe_yml["Description"])
+    html = html.replace("{{ IMAGE }}", f"images/{recipe_yml["Image"]}")
 
     html = html.replace(
         "{{ INGREDIENTS }}", generate_li_from_list(recipe_yml["Ingredients"])
@@ -41,7 +42,15 @@ def generate_recipe_html(name: str) -> str:
 
 
 def generate_li_from_list(items: list[str]) -> str:
-    return "\n".join([f"<li>{d}</li>" for d in items])
+    output = ""
+
+    for item in items:
+        if item[0] == "^":
+            output += f'<h4 class="list_section">{item}</h4>\n'.replace("^", "")
+        else:
+            output += f"<li>{item}</li>\n"
+
+    return output
 
 
 def generate_index(recipe_names: list[str]) -> str:

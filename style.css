@@ -34,7 +34,6 @@ body {
 .page {
   background-color: white;
   border-radius: 8px;
-  padding: 20px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 1);
 }
 
@@ -69,4 +68,41 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   justify-items: center;
+}
+
+.section_heading {
+  text-align: center;
+}
+
+.list_section {
+  margin-left: -50px;
+}
+
+ol {
+  margin-left: 40px;
+}
+
+#recipe-title {
+  text-align: center;
+}
+
+#recipe-description {
+  text-align: center;
+}
+
+#recipe-image {
+  height: 200px;
+}
+
+#recipe-heading {
+  width: 400px;
+  height: 150px;
+  margin: auto;
+  text: black;
+  border-radius: 8px;
+  background-color: white;
+  padding: 10px;
+  text: black;
+  font-size: 18px;
+  opacity: 0.9;
 }

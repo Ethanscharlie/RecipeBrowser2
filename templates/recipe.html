@@ -7,19 +7,31 @@
 
   <body>
     <div id="main" class="page">
-      <a href="../index.html">&lt home</a>
-      <h1>{{ RECIPE_TITLE }}</h1>
-      <p>{{ RECIPE_DESCRIPTION }}</p>
+      <div
+        style="background-image: url('../{{ IMAGE }}'); background-position: center;"
+        id="recipe-image"
+      >
+        <div id="recipe-heading">
+          <h1 id="recipe-title">{{ RECIPE_TITLE }}</h1>
+          <p id="recipe-description">{{ RECIPE_DESCRIPTION }}</p>
+        </div>
+      </div>
 
-      <h2>Ingredients</h2>
-      <ol>
-        {{ INGREDIENTS }}
-      </ol>
+      <br />
 
-      <h2>Instructions</h2>
-      <ol>
-        {{ INSTRUCTIONS }}
-      </ol>
+      <div style="padding: 20px">
+        <h2 class="section_heading">Ingredients</h2>
+        <ol>
+          {{ INGREDIENTS }}
+        </ol>
+
+        <h2 class="section_heading">Instructions</h2>
+        <ol>
+          {{ INSTRUCTIONS }}
+        </ol>
+
+        <a href="../index.html">&lt home</a>
+      </div>
     </div>
   </body>
 </html>
