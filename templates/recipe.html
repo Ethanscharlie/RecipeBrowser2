@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Recipe Browser</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+
+  <body>
+    <div id="main" class="page">
+      <a href="/">&lt home</a>
+      <h1>{{ recipe["Title"] }}</h1>
+      <p>{{ recipe["Description"] }}</p>
+
+      <h2>Ingredients</h2>
+      <ol>
+        {% for ingredient in recipe["Ingredients"] %}
+        <li>{{ ingredient }}</li>
+        {% endfor %}
+      </ol>
+
+      <h2>Instructions</h2>
+      <ol>
+        {% for instruction in recipe["Instructions"] %}
+        <li>{{ instruction }}</li>
+        {% endfor %}
+      </ol>
+    </div>
+  </body>
+</html>

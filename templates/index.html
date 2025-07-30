@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Recipe Browser</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="recipe_card_grid">
+        {% for card in recipe_cards %}
+        <a href="/recipes/{{ card["filename"] }}">
+        <div class="recipe_card">
+          <h1>{{ card["Title"] }}</h1>
+          <p>{{ card["Description"] }}</p>
+        </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>
