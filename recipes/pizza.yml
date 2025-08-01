@@ -1,15 +1,19 @@
 Title: Pizza
-Description: Simple pizza
+Description: Simple pizza, ~$1.67
 Image: pizza.jpg
 
 Ingredients:
+  - ^Base, $0.37
   - Water, 1 Cup
-  - Sugar, 1 Tablespoon
-  - Yeast, 2.5 Teaspoons
-  - Salt, 1 Teaspoon
-  - Vegetable Oil, 1 Tablespoon
-  - Flour, ~2.5 Cups
-  - Toppings, Cheese, Sause, Garlic, Meat, etc.
+  - Sugar, 1 Tablespoon, $0.01
+  - Yeast, 2.5 Teaspoons, $0.16
+  - Salt, 1 Teaspoon, $0.01
+  - Vegetable Oil, 1 Tablespoon, $0.04
+  - Flour, ~2.5 Cups, $0.15
+  - ^Toppings, $1.30
+  - Cheese, $0.43
+  - Sause, $0.25
+  - Pepperoni, $0.62
 
 Instructions:
   - Get water warm and mix it with yeast and sugar
